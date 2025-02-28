@@ -376,8 +376,7 @@ class SoftActorCritic(nn.Module):
             if step % self.target_update_period == 0:
                 self.update_target_critic()
         elif self.soft_target_update_rate is not None:
-            if step % self.soft_target_update_rate == 0:
-                self.soft_update_target_critic()
+            self.soft_update_target_critic(self.soft_target_update_rate)
             
         # Average the critic info over all of the steps
         critic_info = {
