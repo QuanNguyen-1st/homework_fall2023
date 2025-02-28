@@ -1,5 +1,6 @@
+numpy==1.25
 mujoco==2.2.0
-gym[classic_control,mujoco,atari,accept-rom-license]==0.25.2
+gym[classic_control,mujoco,atari,accept-rom-license,box2d]==0.25.2
 tensorboard==2.10.0
 tensorboardX==2.5.1
 matplotlib==3.5.3

@@ -1,3 +1,4 @@
+numpy==1.25
 swig==4.0.2
 mujoco==2.2.0
 gym[box2d,classic_control]==0.25.2
